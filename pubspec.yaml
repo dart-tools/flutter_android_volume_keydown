@@ -1,0 +1,20 @@
+name: flutter_android_volume_keydown
+description: A simple plugin for listening to the Android volume keydown event
+version: 0.0.1
+homepage: https://github.com/dart-tools/flutter_android_volume_keydown
+
+environment:
+  sdk: ">=2.15.0 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: dev.darttools.flutter_android_volume_keydown
+        pluginClass: FlutterAndroidVolumeKeydownPlugin
+
