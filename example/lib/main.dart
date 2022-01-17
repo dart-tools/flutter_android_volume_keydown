@@ -15,7 +15,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  StreamSubscription<bool>? subscription;
+  StreamSubscription<HardwareButton>? subscription;
   @override
   void initState() {
     super.initState();
@@ -23,7 +23,11 @@ class _MyAppState extends State<MyApp> {
 
   void startListening() {
     subscription = FlutterAndroidVolumeKeydown.stream.listen((event) {
-      print("Volume Keydown received");
+      if (event == HardwareButton.volume_down) {
+        print("Volume down received");
+      } else if (event == HardwareButton.volume_up) {
+        print("Volume up received");
+      }
     });
   }
 
