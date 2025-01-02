@@ -1,3 +1,7 @@
-## 0.0.1
+## 1.0.1
 
-* TODO: Describe initial release.
+* Add default namespace to be compatible with Flutter 3.27
+
+## 1.0.0
+
+* Initial release
