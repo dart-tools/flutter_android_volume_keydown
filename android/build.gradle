@@ -31,5 +31,6 @@ android {
 
     defaultConfig {
         minSdkVersion 16
+        namespace "dev.darttools.flutter_android_volume_keydown"
     }
 }
